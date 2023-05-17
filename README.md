@@ -2,7 +2,22 @@
 
 Use treesitter to **autoclose** and **autorename** html tag
 
-It work with html,tsx,vue,svelte,php,rescript.
+It works with:
+
+- astro
+- glimmer
+- handlebars
+- html
+- javascript
+- jsx
+- markdown
+- php
+- rescript
+- svelte
+- tsx
+- typescript
+- vue
+- xml
 
 ## Usage
 
@@ -16,7 +31,7 @@ Before        Input         After
 
 
 ## Setup
-Neovim 0.5 and nvim-treesitter to work
+Neovim 0.7 and nvim-treesitter to work
 
 User treesitter setup
 ```lua
@@ -60,7 +75,7 @@ local filetypes = {
     'xml',
     'php',
     'markdown',
-    'glimmer','handlebars','hbs'
+    'astro', 'glimmer', 'handlebars', 'hbs'
 }
 local skip_tags = {
   'area', 'base', 'br', 'col', 'command', 'embed', 'hr', 'img', 'slot',
@@ -85,3 +100,8 @@ require('nvim-ts-autotag').setup({
 })
 
 ```
+
+## Sponsor
+If you find this plugin useful, please consider sponsoring the project.
+
+[Sponsor](https://paypal.me/trieule1vn)
